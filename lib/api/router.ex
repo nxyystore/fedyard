@@ -43,9 +43,9 @@ defmodule Lanyard.Api.Router do
   get "/" do
     response = %{
       info:
-        "Lanyard provides Discord presences as an API and WebSocket. Find out more here: https://github.com/Phineas/lanyard",
+        "Private Lanyard instance for fednet. https://swappi.ng",
       monitored_user_count: GenRegistry.count(Lanyard.Presence),
-      discord_invite: "https://discord.gg/lanyard"
+      discord_invite: "https://discord.gg/stabbed (will not be instant acception.)"
     }
 
     Util.respond(conn, {:ok, response})
