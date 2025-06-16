@@ -285,7 +285,7 @@ defmodule Lanyard.Gateway.Client do
           "name" => Application.get_env(:lanyard, :bot_presence),
           "type" => Application.get_env(:lanyard, :bot_presence_type)
         },
-        "status" => "online"
+        "status" => Application.get_env(:lanyard, :bot_status)
       },
       "compress" => false,
       "large_threshold" => 250,
