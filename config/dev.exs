@@ -1,7 +1,7 @@
 import Config
 
 config :lanyard,
-  http_port: String.to_integer(System.get_env("PORT") || "6969"),
+  http_port: String.to_integer(System.get_env("PORT") || "5001"),
   discord_spotify_activity_id: "spotify:1",
   command_prefix: System.get_env("COMMAND_PREFIX") || ".",
   bot_presence: System.get_env("BOT_PRESENCE") || "swappi.ng",
