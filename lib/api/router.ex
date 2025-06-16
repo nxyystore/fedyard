@@ -45,7 +45,7 @@ defmodule Lanyard.Api.Router do
       info:
         "Private Lanyard instance for fednet. https://swappi.ng",
       monitored_user_count: GenRegistry.count(Lanyard.Presence),
-      discord_invite: "https://discord.gg/stabbed (will not be instant acception.)"
+      discord_invite: "https://discord.gg/stabbed"
     }
 
     Util.respond(conn, {:ok, response})
