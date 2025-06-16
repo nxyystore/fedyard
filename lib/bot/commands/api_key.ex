@@ -20,7 +20,7 @@ defmodule Lanyard.DiscordBot.Commands.ApiKey do
 
     DiscordApi.send_message(
       payload["channel_id"],
-      ":white_check_mark: Your new Lanyard API key is `#{key}`\n\n**ABSOLUTELY DO NOT SHARE OR POST THIS KEY ANYWHERE IT WILL ALLOW ANYONE TO MANAGE YOUR LANYARD K/V**\n*Run this command again if you need to re-generate your key*"
+      ":white_check_mark: Your new Fedyard API key is `#{key}`\n\n**ABSOLUTELY DO NOT SHARE OR POST THIS KEY ANYWHERE IT WILL ALLOW ANYONE TO MANAGE YOUR FEDYARD K/V**\n*Run this command again if you need to re-generate your key*"
     )
   end
 
@@ -61,7 +61,7 @@ defmodule Lanyard.DiscordBot.Commands.ApiKey do
 
     DiscordApi.send_message(
       dm_channel,
-      ":repeat: **We've regenerated your api key as you used it in a K/V command.**\nYour new Lanyard API key is `#{key}`\n\n**ABSOLUTELY DO NOT SHARE OR POST THIS KEY ANYWHERE IT WILL ALLOW ANYONE TO MANAGE YOUR LANYARD K/V**\n*Run `.apikey` in this DM if you need to re-generate your key*"
+      ":repeat: **We've regenerated your api key as you used it in a K/V command.**\nYour new Fedyard API key is `#{key}`\n\n**ABSOLUTELY DO NOT SHARE OR POST THIS KEY ANYWHERE IT WILL ALLOW ANYONE TO MANAGE YOUR FEDYARD K/V**\n*Run `.apikey` in this DM if you need to re-generate your key*"
     )
   end
 
