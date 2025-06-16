@@ -44,14 +44,14 @@ defmodule Lanyard.Api.Util do
 
   @spec not_found(Plug.Conn.t()) :: Plug.Conn.t()
   def not_found(conn) do
-    respond(conn, {:error, 404, :not_found, "Route does not exist"})
+    respond(conn, {:error, 404, :not_found, "API Route doesn't exist. Leave. https://swappi.ng"})
   end
 
   @spec no_permission(Plug.Conn.t()) :: Plug.Conn.t()
   def no_permission(conn) do
     respond(
       conn,
-      {:error, 401, :no_permission, "You do not have permission to access this resource"}
+      {:error, 401, :no_permission, "You have no permission to be here. Leave. https://swappi.ng"}
     )
   end
 end
